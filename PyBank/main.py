@@ -45,7 +45,7 @@ with open(budget_data_path, newline='') as budgetfile:
             greatest_decrease_amount = current_monthly_change
             greatest_decrease_month = current_month
 
-# print results:
+# print results to terminal
 print("Financial Analysis")
 print("------------------------------")
 print(f"Total Months: {months}")
@@ -56,8 +56,7 @@ print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${int(greatest_
 print("------------------------------")
         
 
-#print text file:
-
+#print text file
 output_summary_path = os.path.join(".","budget_summary_output.txt")
 
 with open(output_summary_path,'w',newline='') as summaryoutput:
